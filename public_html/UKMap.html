@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://kunet.kingston.ac.uk/k1419859/WebsiteStyle.css">
+  <link rel="stylesheet" href="auto-complete.css">
+  <link href="http://kunet.kingston.ac.uk/k1419859/Logo%20for%20Website.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min.js"></script>
+
+  <title>Map of UK</title>
+  
+  <link rel="stylesheet" type="text/css" href="StyleMap.css">
+
+</head>
+<body>
+<div class="topnav">
+
+<span>
+<img id="logo" src="http://kunet.kingston.ac.uk/k1419859/Logo%20for%20Website.png" height="70" width="100" alt="homepage"> British Cuisine Delights
+</span>
+
+<a href="http://kunet.kingston.ac.uk/k1419859/ContactUs.html">Contact Us</a>
+<a href="http://kunet.kingston.ac.uk/k1419859/UKMap.html">Food Guide</a>
+<a href="http://kunet.kingston.ac.uk/k1419859/FoodProducts.html">Food Products</a>
+<a href="http://kunet.kingston.ac.uk/k1419859/index.html">Home</a>
+</div>
+ 
+<h1>The British Food Cuisine Guide</h1>
+
+<input id="pac-input" class="controls" type="text" placeholder="Search Food Product...">
+<input type="submit" id="searchButton" value="Search">
+<a href="http://kunet.kingston.ac.uk/k1419859/UKMap.html">Reset</a>
+
+
+<div id="map"></div>
+
+<div id="images"></div>
+
+<script type="text/javascript" src="auto-complete.js"></script>
+<script type="text/javascript" src="CodeforMap.js"></script>
+<div class="row">
+<div class="col-sm-4">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI993rmWy5LRhbUW6YBeOHfEIisaW_O0w&libraries=places&callback=myMap"></script>
+</div>
+</div>
+
+</body>
+</html>

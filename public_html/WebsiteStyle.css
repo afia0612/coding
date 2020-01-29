@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+    overflow: hidden;
+	padding: 20px;
+    background-color: #707bf5;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #d55757;
+    color: black;
+}
+
+
+body 
+{
+    font-family: Cooper Black,sans-serif;
+}
+.mySlides {display:none}
+
+
+.slideshow-container {
+  max-width: 450px;
+  position: relative;
+  margin: auto;
+}
+
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 4s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 100px) {
+  .text {font-size: 11px}
+}
+
+h1 {
+    text-align: center;
+	margin:40px;
+	}
+
+h3 {
+    text-align: center;
+	font-family: verdana, sans-serif;
+}
+
+h4 {
+    text-align: center;
+	font-family: verdana, sans-serif;
+} 
+
+h5 {
+    text-align: center;
+	font-family: verdana, sans-serif;
+} 
+
+.row.inline-block > *
+{
+  display: inline-block; float: none; vertical-align: top;
+}
+
+#pac-input 
+	{
+        background-color: #fff;
+        font-family: Verdana;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+		text-align: center;
+      }
+
+      #pac-input:focus 
+	  {
+        border-color: #f53f3f ;
+      }
+	  

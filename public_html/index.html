@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://kunet.kingston.ac.uk/k1419859/WebsiteStyle.css">
+        <link rel="stylesheet" href="auto-complete.css">
+        <link href="http://kunet.kingston.ac.uk/k1419859/Logo%20for%20Website.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./HomeSearch.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min.js"></script>
+        <script type="text/javascript" src="auto-complete.js"></script>
+
+        <title>Home</title>
+
+        <link rel="stylesheet" type="text/css" href="WebsiteStyle.css">
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById('myDIV');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+        </script>
+
+    <div class="topnav">
+
+        <span>
+            <img id="logo" src="http://kunet.kingston.ac.uk/k1419859/Logo%20for%20Website.png" height="70" width="100" alt="homepage"> British Cuisine Delights
+        </span>
+
+        <a href="http://kunet.kingston.ac.uk/k1419859/ContactUs.html">Contact Us</a>
+        <a href="http://kunet.kingston.ac.uk/k1419859/UKMap.html">Food Guide</a>
+        <a href="http://kunet.kingston.ac.uk/k1419859/FoodProducts.html">Food Products</a>
+        <a href="http://kunet.kingston.ac.uk/k1419859/index.html">Home</a>
+		
+    </div>
+	
+	<body>
+    
+    <header>
+        
+        <h1>British Cuisine Delights</h1>
+		
+		<input id="pac-input" class="controls" type="text" placeholder="Search Towns...">
+        <input type="submit" id="searchButton" value="Search">
+		
+		<h3>About:</h3>
+		<h4> Explore the traditional, seasonal and popular British dishes available around UK and Ireland. </h4>
+		<h4> Treat your taste buds to England’s best food and drink from around the country. </h4>
+		<h4> We include a map of the various British Food Products around UK and Ireland that you may want to discover! </h4>
+		<h4> Search for any town you may be traveling to, to explore the popular local produce available in that area</h4>
+		
+	    <div class="slideshow-container">
+		
+		    <div class="mySlides fade">
+                <img src="http://mmachadotranslation.co.uk/wp-content/uploads/2017/09/English-scones.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://realfood.tesco.com/media/images/Eton-mess-new-HERO-ef9cbb98-c142-4f2a-b2c0-4696c591fd8a-0-472x310-b382a6dc-ac59-4315-8b64-c005ac191c92-0-472x310.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="http://img.taste.com.au/BMU2oLU3/taste/2016/11/beef-shepherds-pie-106408-1.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://qph.ec.quoracdn.net/main-qimg-a4689fb006f771ff8c9a9fb1e2f2c0d2" style="width:100%">
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span>  
+            <span class="dot"></span>
+            <span class="dot"></span>  
+        </div>
+		
+		<h3>Regions within the UK are as follows:</h3>
+		<h4>Scotland </h4>
+		<h4>North East England</h4>
+		<h4>North West England</h4>
+		<h4>Yorkshire and the Humber</h4>
+		<h4>East Midlands</h4>
+		<h4>West Midlands</h4>
+		<h4>East of England</h4>
+		<h4>London</h4>
+		<h4>South East England</h4>
+		<h4>South West England</h4>
+		<h4>Wales</h4>
+		<h4>Northern Ireland</h4>
+
+    </header>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+
+
+</body>
+
+</html>
